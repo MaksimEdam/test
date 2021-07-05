@@ -1,0 +1,33 @@
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-fill);
+  transition: fill var(--transition-start-time) var(--cubic-bezier);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--title-text-color-footer);
+  }
+}
+.social-list {
+  display: flex;
+}
+.social-list_padding {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--title-text-color-footer);
+  border-radius: 50%;
+  transition: background-color var(--transition-start-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

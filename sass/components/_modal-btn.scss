@@ -1,0 +1,23 @@
+.modal-button {
+  align-self: center;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color var(--transition-start-time) var(--cubic-bezier),
+    color var(--transition-start-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-focus);
+    color: var(--title-text-color-footer);
+  }
+}
+.modal-button_style {
+  color: var(--title-text-color);
+  padding: 10px 32px;
+}

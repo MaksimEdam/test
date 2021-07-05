@@ -1,0 +1,118 @@
+.section-icon__list {
+  width: 70px;
+  height: 70px;
+  fill: var(--icon-fill);
+}
+.section-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--background-our-team-filter);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.section-description__title {
+  text-transform: uppercase;
+}
+.section-description__title,
+.team__title {
+  @include font();
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.work__title,
+.clients__title {
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+  padding-top: 60px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+}
+.desc,
+.address-list {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* МОБИЛКА */
+@media screen and (max-width: 767px) {
+  .work__title_margin {
+    padding-top: 60px;
+  }
+  .section-icon {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+  .section-icon__link {
+    max-width: 450px;
+  }
+  .section-description__title {
+    text-align: center;
+  }
+
+  .section-icon__desc:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+/* МОБИЛКА конец*/
+/* ТАБЛЕТ */
+@media screen and (min-width: 768px) {
+  .section-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 94px;
+    margin-bottom: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .section-icon__desc {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .section-icon__link {
+    max-width: 354px;
+  }
+  .section-description__title {
+    text-align: left;
+  }
+  .section-description__list {
+    display: flex;
+    margin-right: -30px;
+    margin-top: -30px;
+  }
+  .section-description__item {
+    margin-right: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 2);
+  }
+}
+/* ТАБЛЕТ конец */
+/* ДЕСКТОП */
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-icon {
+    justify-content: space-between;
+    padding-top: 94px;
+    margin-bottom: 30px;
+  }
+  .section-icon__desc {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .section-icon__link {
+    width: 270px;
+  }
+}
+/* ДЕСКТОП конец*/
