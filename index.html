@@ -617,6 +617,45 @@
     </main>
     <!--нижний колонтитул-->
     <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__form-container">
+          <h2 class="footer__title">
+            Registration for a <span class="footer__accent"> free </span>phone
+            <span class="footer__accent">consultation</span>on the nuances of English UPE
+          </h2>
+          <p class="footer__title">
+            Leave a request for participation in a <span class="footer__accent">free lesson</span> .
+            A consultant will contact you and answer your questions
+          </p>
+        </div>
+
+        <form class="footer__form">
+          <label class="footer__field"
+            ><input type="name" name="user-mail" class="footer__message" placeholder="Имя" required
+          /></label>
+          <label class="footer__field"
+            ><input
+              type="tel"
+              name="user-phone"
+              class="footer__message"
+              placeholder="Телефон*"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="097-777-77-77"
+            />
+          </label>
+
+          <button type="submit" class="footer__modal-button footer__btn footer-btn_style">
+            Хочу на бесплатное занятие
+          </button>
+        </form>
+      </div>
+      <div>
+        <img src="./images/project/mobile/logo.jpg" alt="logo" width="80" />
+      </div>
+    </footer>
+
+    <!-- <footer class="footer">
       <div class="footer__container">
         <h2 class="footer__title">
           Registration for a <span class="footer__accent"> free </span>phone
@@ -628,17 +667,18 @@
           consultant will contact you and answer your questions
         </p>
 
-        <form action="#" class="form" method="post">
-          <div class="form__registration">
-            <div class="field">
-              <input name="name" placeholder="Имя *" required="" type="text" />
-            </div>
-
-            <div class="field">
-              <input name="phone" placeholder="Телефон *" required="" type="tel" />
-            </div>
-          </div>
-          <button class="submit form__button" type="submit">Хочу На Бесплатное Занятие</button>
+        <form class="footer__form">
+          <h2 class="footer__title">Подпишитесь на рассылку</h2>
+          <label class="footer__field"
+            ><input
+              type="email"
+              name="user-mail"
+              class="footer__message"
+              placeholder="E-mail"
+              required /></label
+          ><button type="submit" class="modal-button footer__btn footer-btn_style">
+            Подписаться
+          </button>
         </form>
       </div>
 
@@ -660,7 +700,7 @@
           <span>@ Все права защищены, 2019</span>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
